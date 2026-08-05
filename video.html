@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Portfolio — Anshuman Gupta</title>
+<meta name="description" content="Video portfolio — short-form reels, podcast edits, YouTube episodes and ad films. Everything plays inline, right on the page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="page-head">
+  <div class="hero-bg"><span class="blob b1"></span><span class="blob b2"></span><span class="grid-fade"></span></div>
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="index.html">Home</a> &nbsp;/&nbsp; Video Portfolio</div>
+    <h1 class="reveal" data-d="1">Reels, podcasts &amp; <span class="grad-text">ad films</span></h1>
+    <p class="lead reveal" data-d="2">Short-form edits, full podcast pipelines and ad creative — press play and it runs right here, no leaving the page.</p>
+  </div>
+</header>
+
+<section style="padding:30px 0 0">
+  <div class="wrap">
+    <div class="kpi-grid reveal">
+      <div class="kpi"><div class="num" data-count="17853" data-suf="">0</div><div class="lbl">Subscribers driven</div></div>
+      <div class="kpi"><div class="num" data-count="1.64" data-dec="2" data-suf="M">0</div><div class="lbl">Video impressions</div></div>
+      <div class="kpi"><div class="num" data-count="69" data-suf="%">0</div><div class="lbl">Peak interaction rate</div></div>
+      <div class="kpi"><div class="num" data-count="500" data-suf="+">0</div><div class="lbl">Assets produced</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REELS -->
+<section style="padding-top:56px">
+  <div class="wrap">
+    <div class="center mb-l"><span class="eyebrow reveal">Short-form</span><h2 class="title reveal" data-d="1">Reels &amp; short-form edits</h2>
+      <p class="lead reveal" data-d="2">Hook-first vertical edits built for reach and retention. Tap to watch inline.</p></div>
+    <div class="filter-bar reveal" data-filtergroup data-target="#reelGrid">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Brand">Brand</button>
+      <button class="filter-btn" data-filter="D2C">D2C</button>
+      <button class="filter-btn" data-filter="Education">Education</button>
+      <button class="filter-btn" data-filter="Personal Brand">Personal Brand</button>
+      <button class="filter-btn" data-filter="Campaign">Campaign</button>
+    </div>
+    <div class="vgrid" id="reelGrid"></div>
+  </div>
+</section>
+
+<!-- YOUTUBE -->
+<section style="background:var(--bg-soft);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="center mb-l"><span class="eyebrow green reveal">Long-form</span><h2 class="title reveal" data-d="1">Podcasts &amp; YouTube</h2>
+      <p class="lead reveal" data-d="2">Full podcast editing and long-form cuts — from raw recording to publish-ready.</p></div>
+    <div class="vgrid" id="ytGrid" style="grid-template-columns:repeat(3,1fr)"></div>
+  </div>
+</section>
+
+<!-- AD FILMS -->
+<section>
+  <div class="wrap">
+    <div class="center mb-l"><span class="eyebrow reveal">Ad creative</span><h2 class="title reveal" data-d="1">Ad films &amp; campaign video</h2>
+      <p class="lead reveal" data-d="2">Performance-driven ad creative produced for paid campaigns.</p></div>
+    <div class="vgrid" id="driveGrid" style="grid-template-columns:repeat(2,1fr);max-width:860px;margin:0 auto;gap:22px"></div>
+    <p class="center" style="font-size:12.5px;color:var(--slate-2);margin-top:20px">Hosted on Google Drive · set files to "anyone with the link" to play inline.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap"><div class="cta-band reveal"><span class="blob b1"></span><span class="blob b2"></span>
+    <div style="position:relative"><h2>Need video that performs?</h2><p>Reels, ad films and podcast edits built to move metrics, not just look good.</p>
+      <div class="btns"><a class="btn btn-blue" href="contact.html">Let's create<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="ai-systems.html" style="background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.2)">See the AI pipeline</a></div></div>
+  </div></div>
+</section>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function(){
+  var grads=["linear-gradient(160deg,#2563EB,#0b1220)","linear-gradient(160deg,#7c3aed,#0b1220)","linear-gradient(160deg,#10B981,#0b1220)","linear-gradient(160deg,#ef4444,#0b1220)"];
+  var play='<div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>';
+  var ytIco='<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23 12s0-3.6-.46-5.3a2.78 2.78 0 0 0-1.95-2C18.88 4.2 12 4.2 12 4.2s-6.88 0-8.59.5A2.78 2.78 0 0 0 1.46 6.7 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.3 2.78 2.78 0 0 0 1.95 2c1.71.5 8.59.5 8.59.5s6.88 0 8.59-.5a2.78 2.78 0 0 0 1.95-2C23 15.6 23 12 23 12ZM9.75 15.5v-7l6 3.5Z"/></svg>';
+
+  // reels — real Instagram players, loaded inline
+  var rHost=document.getElementById("reelGrid");
+  (window.MEDIA.reels||[]).forEach(function(r){
+    var cell=document.createElement("div");
+    cell.setAttribute("data-cat",r.tag);
+    cell.innerHTML=
+      '<div class="embed-card portrait" data-ig data-src="https://www.instagram.com/reel/'+r.id+'/embed/">'+
+        '<span class="badge-tl badge-ig">Reel</span>'+
+        '<div class="load"><div style="text-align:center"><div class="sp"></div>Loading reel…</div></div>'+
+      '</div>'+
+      '<div class="embed-lbl">'+r.t+'<span class="tg">'+r.tag+'</span></div>';
+    rHost.appendChild(cell);
+  });
+
+  // youtube — real thumbnail, click plays inline
+  var yHost=document.getElementById("ytGrid");
+  (window.MEDIA.youtube||[]).forEach(function(y){
+    var d=document.createElement("div");
+    d.className="facade wide";
+    d.setAttribute("data-src","https://www.youtube-nocookie.com/embed/"+y.id+"?autoplay=1&rel=0");
+    d.innerHTML='<img class="thumb" loading="lazy" src="https://img.youtube.com/vi/'+y.id+'/hqdefault.jpg" alt="'+y.t+'">'+
+      '<span class="badge-tl badge-yt">YouTube</span><div class="grad"></div>'+play+
+      '<div class="meta"><div class="plat">'+ytIco+'YouTube</div><b>'+y.t+'</b></div>';
+    yHost.appendChild(d);
+  });
+
+  // drive ad films — click plays inline
+  var dHost=document.getElementById("driveGrid");
+  (window.MEDIA.drive||[]).forEach(function(v,i){
+    var d=document.createElement("div");
+    d.className="facade wide";
+    d.style.background=grads[i%grads.length];
+    d.setAttribute("data-src","https://drive.google.com/file/d/"+v.id+"/preview");
+    d.innerHTML='<span class="badge-tl badge-drive">Ad Film</span><div class="grad"></div>'+play+
+      '<div class="meta"><div class="plat">▶ Campaign</div><b>'+v.t+'</b></div>';
+    dHost.appendChild(d);
+  });
+
+  if(window.scanMedia) window.scanMedia();
+})();
+</script>
+</body>
+</html>
